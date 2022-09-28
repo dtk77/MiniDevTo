@@ -7,10 +7,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="FastEndpoints" Version="5.1.0" />
+    <PackageReference Include="FastEndpoints.Security" Version="5.1.0" />
     <PackageReference Include="FastEndpoints.Swagger" Version="5.1.0" />
     <PackageReference Include="FluentValidation" Version="11.2.2" />
     <PackageReference Include="MongoDB.Entities" Version="20.26.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Admin\ArticleModeration\GetPendingList\" />
+    <Folder Include="Features\Admin\ArticleModeration\Approve\" />
+    <Folder Include="Features\Admin\ArticleModeration\Reject\" />
+    <Folder Include="Features\Admin\Login\" />
+    <Folder Include="Features\Author\Articles\GetArticle\" />
+    <Folder Include="Features\Author\Articles\GetMyArticles\" />
+    <Folder Include="Features\Author\Articles\SaveArticle\" />
+    <Folder Include="Features\Author\Login\" />
+    <Folder Include="Features\Public\AddArticleComment\" />
+    <Folder Include="Features\Public\GetArticle\" />
+    <Folder Include="Features\Public\GetArticleComments\" />
+    <Folder Include="Features\Public\GetArticleList\" />
   </ItemGroup>
 
 </Project>
