@@ -36,8 +36,5 @@ public class Validator : Validator<Request>
              .NotEmpty().WithMessage("не указан пароль")
             .MinimumLength(10).WithMessage("пароль слишком короткий!")
             .MaximumLength(25).WithMessage("парооль слишком длинный");
-
     }
-
-
 }
